@@ -1,0 +1,159 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/color.gif")no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    text-shadow: whitesmoke;
+}
+
+h4 {
+    font-family: monospace;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    COLOR: #314747a3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+    gap: 1rem;
+    width: 40%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.196);
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+#color {
+    width: 70px;
+    height: 40px;
+}
+
+#color:hover {
+    cursor: pointer;
+}
+
+#hex {
+    width: 70%;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+#hex:hover {
+    cursor: pointer;
+}
+
+#copy-btn {
+    font-size: 24px;
+    position: relative;
+    right: 37px;
+}
+
+/* responsive */
+
+@media(max-width:1000px) {
+    .col {
+        width: 50%;
+    }
+}
+
+@media(max-width:800px) {
+    .col {
+        width: 65%;
+    }
+}
+
+@media(max-width:600px) {
+    .col {
+        width: 85%;
+    }
+}
+
+@media(max-width:500px) {
+    .col {
+        width: 90%;
+    }
+
+    #hex {
+        width: 85%;
+    }
+}
+
+@media(max-width:450px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #hex {
+        width: 85%;
+    }
+
+    .input {
+        position: relative;
+        left: 9px;
+    }
+}
+
+@media(max-width:350px) {
+    h1 {
+        font-size: 35px;
+        position: relative;
+        top: 10px;
+    }
+
+    #hex {
+        width: 100%;
+        height: 45px;
+    }
+
+    .input {
+        position: relative;
+        left: 9px;
+        top: 20px;
+    }
+
+    #color {
+        position: relative;
+        top: 20px;
+    }
+
+    h4 {
+        font-size: 23px;
+    }
+}
